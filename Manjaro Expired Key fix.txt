@@ -1,0 +1,6 @@
+Fix Manjaro Expired Keys
+
+sudo pacman -S manjaro-keyring archlinux-keyring
+sudo pacman -S manjaro-keyring
+Then
+sudo pacman -Syyuu
