@@ -1,0 +1,42 @@
+use_xft yes
+xftfont 110:size=8
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type conky
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 250 5
+maximum_width 650
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color efefef
+default_shade_color red
+default_outline_color green
+alignment top_right
+gap_x -5
+gap_y -25
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+
+
+own_window_argb_value 0
+own_window_argb_visual yes
+own_window_colour 000000
+TEXT
+${voffset 10}${color C9C7C7}${font FFF Tusj:pixelsize=110}${time %I:%M}${font}${voffset -40}${offset 8}${color 35BF5C}${font Capture it:pixelsize=50}${time %d} ${voffset -18}${color C9C7C7}${font Capture it:pixelsize=30}${time  %B} ${time %Y}${font}${voffset 22}${font Capture it:pixelsize=30}${offset -110}${time %A}${font}
+${voffset 2}${offset 3}${font Antipasto:pixelsize=14}${color 35BF5C}HD ${offset 2}$color${fs_free /} / ${fs_size /}${offset 10}${color 35BF5C}RAM ${offset 2}$color$mem / $memmax${offset 10}${color 35BF5C}CPU's ${offset 2}$color${cpu cpu1}% / $color${cpu cpu2}% ${offset 10}${color 35BF5C}Linux ${offset 2}$color${machine} 
+
+
+
+
+
+
