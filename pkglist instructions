@@ -1,0 +1,10 @@
+
+Backup and import / Install  Package List For furure installation.  
+
+First, backup the current list of packages (which are available in a repository):
+
+pacman -Qqe | grep -v "$(pacman -Qmq)" > pkglist
+
+Copy the pkglist file to the new installation, and navigate to the directory containing it.
+
+sudo pacman -S $(cat pkglist)
